@@ -310,19 +310,37 @@ Author: Vanderson Cani [vanderson.alex.cani@gmail.com](mailto:vanderson.alex.can
 
 Date:   Tue Mar 24 09:01:43 2026 -0300
 
-
-
 ====================================================================================================================================================================
-
-
 
 O retorno do comando git status nos mostra que nossa branch está atualizada, sem nenhuma modificação para ser adicionada ou comentada, e o nosso log de adições continua crescendo, o que mostra que nosso processo de desenvolvimento está sendo bem estruturado. Nessa etapa da atividade presenciei uma necessidade bastante comum, como nosso log está agora ficando muito extenso, o nosso terminal abriu um histórico visualizador que nos permite navegar através do histórico (quando me referi a abrir, não significa que abriu uma janela ou algo do tipo, me referi que a linha de comando no terminal está mostrando linhas interativas, onde apertando "enter" o terminal vai "abrindo" e mostrando os commits mais antigos em novas linhas no terminal, esse tipo de interação em terminais é comum em algumas situações como em ambientes Linux por exemplo, Curiosidade: você não consegue executar outro comando git enquanto não sair dessa interação do comando "git log", a tecla que é necessário apertar para sair da interação desse comando é "q", assim o terminal volta a esperar novos comandos git.
 
-
-
 ====================================================================================================================================================================
-
-
 
 Fase de testes de novos comandos, agora iniciaremos a criação de um arquivo chamado "branch\_merge\_log.md", esse arquivo será utilizado para detalhar nossos estudos sobre os comandos branch, merge e log.
 
+====================================================================================================================================================================
+
+Conforme Adição anterior, a intenção era que os próximos passos fossem todos adicionados apenas na feature, porém como pude perceber durante a execução dos commits e das alterações dentro da feature, após o retorno até branch main, as edições dentro do arquivo "sumiram", o que reforça o aprendizado que as features são ambientes diferentes da branch principal, agora para garantir que o histórico de aprendizado permaneça completo irei usar os comandos possíveis para voltar até a feature e recuperar os arquivos, eu acredito que essa é a função do merge.
+
+====================================================================================================================================================================
+
+Utilizado o comando git merge feature-estudo-branch
+
+Retornado no terminal 
+
+$ git merge feature-estudo-branch
+Updating c29cd60..b5005b9
+Fast-forward
+ branch_merge_log.md.txt |  0
+ branch_merge_log.txt    | 59 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 59 insertions(+)
+ delete mode 100644 branch_merge_log.md.txt
+ create mode 100644 branch_merge_log.txt
+
+====================================================================================================================================================================
+
+Agora temos de volta nossa evolução adicionado no arquivo branch_merge_log.txt, como eu havia imaginado a função merge une as adições da feature na branch principal, por isso quando saímos da feature, significa que saímos do ambiente de testes e o repositório local permanece igual ao repositório main antes da criação da feature, isso com certeza facilita muito para verificações e principalmente, para que o desenvolvedor não sofra com aqueles medos de ter editado algo em produção, podendo até gerar problemas maiores e/ou até irreversíveis.
+
+ ====================================================================================================================================================================
+
+para concluir essa etapa sobre o aprendizado do merge, irei adicionar e commitar como de costume para manter a linha de raciocínio e continuar o aprendizado em aula.  
