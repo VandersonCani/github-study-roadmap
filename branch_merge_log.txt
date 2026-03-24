@@ -5,3 +5,55 @@ git checkout -b feature-estudo-branch
 Esse comando cria uma nova branch e automaticamente posiciona o ponteiro HEAD nessa nova branch.
 
 Isso significa que todas as alterações a partir desse momento não irão afetar a branch principal (main).teste de branch
+
+====================================================================================================================================================================
+
+XXXXXXXXXXXXXXXX ~/Desktop/Faculdade/github-study-roadmap (feature-estudo-branch)
+$ git commit -m "feat: adiciona teste dentro da branch, percebi que adicionou ao final da linha, sem espaço e sem pular linha, mas funcionou."
+[feature-estudo-branch a698fc5] feat: adiciona teste dentro da branch, percebi que adicionou ao final da linha, sem espaço e sem pular linha, mas funcionou.
+ 1 file changed, 7 insertions(+)
+
+====================================================================================================================================================================
+
+Foi realizada uma alteração dentro da branch "feature-estudo-branch".
+
+Essa alteração foi commitada apenas nessa branch, ou seja, ainda não está presente na branch main.
+
+Git status retornou que não há nenhuma adição ou commit a ser realizado. 
+
+====================================================================================================================================================================
+
+XXXXXXXXXXXXXXXX ~/Desktop/Faculdade/github-study-roadmap (feature-estudo-branch)
+$ git status
+On branch feature-estudo-branch
+nothing to commit, working tree clean
+
+====================================================================================================================================================================
+
+XXXXXXXXXXXXXXXX ~/Desktop/Faculdade/github-study-roadmap (feature-estudo-branch)
+$ git log
+commit a698fc5804555f942e6c7879ea77f2956ac1a029 (HEAD -> feature-estudo-branch)
+Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+Date:   Tue Mar 24 11:47:30 2026 -0300
+
+    feat: adiciona teste dentro da branch, percebi que adicionou ao final da linha, sem espaço e sem pular linha, mas funcionou.
+
+commit ac0ffbcc742f9e7c72fa17ae7cdbfcdc06284be8
+Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+Date:   Tue Mar 24 11:41:05 2026 -0300
+
+    adicionado nova branch chamada feature estudo branch
+
+commit c29cd6075c59f307037d4a40f99a9f0a3710dc5c (origin/main, main)
+Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+Date:   Tue Mar 24 11:37:58 2026 -0300
+
+    Finalizado adições no arquivo readme, ETC......
+
+====================================================================================================================================================================
+
+O retorno do comando git status mostra que nós estamos na branch feature-estudo-branch, e que não há nada no momento para adicionar e "commitar", logo acima onde mostra o caminho de onde está sendo executado o terminal git, podemos ver entre parênteses que nosso terminal está ativo no branch (feature-estudo-branch). no comando git log podemos ver também que head está apontando para features-estudo-branch, e que nossa origem continua vinculada ao branch main. 
+
+====================================================================================================================================================================
+
+Agora utilizaremos o comando git checkout main, 
