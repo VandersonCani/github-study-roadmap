@@ -1,0 +1,1 @@
+Esse arquivo foi criado com o objetivo de testar múltiplas alterações de documentos dentro do repositório local, para testar comandos de adições únicas de arquivos e commits. 
