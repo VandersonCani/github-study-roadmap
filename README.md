@@ -54,7 +54,7 @@ Date:   Tue Mar 24 08:49:36 2026 -0300
 
 
 
-Como podemos ver os comentários a cada commit adicionado recebe um hash de identificação, no caso atual da minha evolução de trabalho o ponteiro "HEAD" está apontando para a branch main, no caso minha branch local, lembra que quando criamos o repositório local fizemos alteração da branch master para a branch main? naquela etapa criamos a branch local chamada main, e "origin/main" significa que nosso repositório web no GitHub está apontando para o mesmo commit, ou seja nessa etapa estamos com ambos sincronizados, agora vou realizar um salvar nesse documento e vou utilizar o comando "git status". 
+Como podemos ver os comentários a cada commit adicionado recebe um hash de identificação, no caso atual da minha evolução de trabalho o ponteiro "HEAD" está apontando para a branch main, no caso minha branch local, lembra que quando criamos o repositório local fizemos alteração da branch master para a branch main? naquela etapa criamos a branch local chamada main, e "origin/main" significa que nosso repositório web no GitHub está apontando para o mesmo commit, ou seja nessa etapa estamos com ambos sincronizados, agora vou realizar um salvar nesse documento e vou utilizar o comando "git status".
 
 
 
@@ -90,11 +90,11 @@ O retorno do git status nos mostra que temos alterações não preparadas para o
 
 ====================================================================================================================================================================
 
-Arquivo salvo. 
+Arquivo salvo.
 
 
 
-Nessa etapa estamos com o arquivo editado, mas não adicionado nem commitado. 
+Nessa etapa estamos com o arquivo editado, mas não adicionado nem commitado.
 
 
 
@@ -190,7 +190,7 @@ Changes not staged for commit:
 
 
 
-Como podemos ver, agora nosso arquivo novo que antes não estava no estagio de commit, está aguardando o comentário sobre as alterações desse arquivo, enquanto nosso arquivo README que está sendo modificado ainda atualmente não foi adicionado portanto não será "commitado", vou utilizar o comando (git commit -m "arquivo adicionado chamado texto de teste, nele contém mais informações sobre sua utilidade e funcionalidade"). logo após utilizarei o comando git status e adicionarei a resposta do console abaixo. 
+Como podemos ver, agora nosso arquivo novo que antes não estava no estagio de commit, está aguardando o comentário sobre as alterações desse arquivo, enquanto nosso arquivo README que está sendo modificado ainda atualmente não foi adicionado portanto não será "commitado", vou utilizar o comando (git commit -m "arquivo adicionado chamado texto de teste, nele contém mais informações sobre sua utilidade e funcionalidade"). logo após utilizarei o comando git status e adicionarei a resposta do console abaixo.
 
 
 
@@ -240,7 +240,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 
 
-Como podemos ver após o commit sobre a adição do texto\_de\_teste.txt, apenas o arquivo modificado se mantém na lista do git status com pendencia de commit, agora como ele é o ultimo arquivo a ser modificado, vou utilizar o comando "git add README.md",e depois vou comentar utilizando (git commit -m "Terminado atividade sobre utilização dos comandos git status, log, add"), após a utilização desses dois comandos vou adicionar aqui em baixo o resultado dos comandos git status e git log, para analisarmos o comportamento do git após todos arquivos e comentários estarem devidamente atualizados. 
+Como podemos ver após o commit sobre a adição do texto\_de\_teste.txt, apenas o arquivo modificado se mantém na lista do git status com pendencia de commit, agora como ele é o ultimo arquivo a ser modificado, vou utilizar o comando "git add README.md",e depois vou comentar utilizando (git commit -m "Terminado atividade sobre utilização dos comandos git status, log, add"), após a utilização desses dois comandos vou adicionar aqui em baixo o resultado dos comandos git status e git log, para analisarmos o comportamento do git após todos arquivos e comentários estarem devidamente atualizados.
 
 
 
@@ -270,7 +270,7 @@ $ git log
 
 commit e1f91cbc3179a5a45ff69ea906c1e83864cab702 (HEAD -> main)
 
-Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+Author: Vanderson Cani [vanderson.alex.cani@gmail.com](mailto:vanderson.alex.cani@gmail.com)
 
 Date:   Tue Mar 24 10:16:31 2026 -0300
 
@@ -282,7 +282,7 @@ Date:   Tue Mar 24 10:16:31 2026 -0300
 
 commit 4fd0811fd11066f7e4a9f83ce1db0624873656a2
 
-Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+Author: Vanderson Cani [vanderson.alex.cani@gmail.com](mailto:vanderson.alex.cani@gmail.com)
 
 Date:   Tue Mar 24 10:05:56 2026 -0300
 
@@ -294,7 +294,7 @@ Date:   Tue Mar 24 10:05:56 2026 -0300
 
 commit 10a7079fcbbd99d3c1469f2d91837621409d64d3 (origin/main)
 
-Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+Author: Vanderson Cani [vanderson.alex.cani@gmail.com](mailto:vanderson.alex.cani@gmail.com)
 
 Date:   Tue Mar 24 09:08:37 2026 -0300
 
@@ -306,7 +306,7 @@ Date:   Tue Mar 24 09:08:37 2026 -0300
 
 commit 4fd986a695ccd1415b33c6c8caa28cb7aebee9ed
 
-Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+Author: Vanderson Cani [vanderson.alex.cani@gmail.com](mailto:vanderson.alex.cani@gmail.com)
 
 Date:   Tue Mar 24 09:01:43 2026 -0300
 
@@ -324,5 +324,5 @@ O retorno do comando git status nos mostra que nossa branch está atualizada, se
 
 
 
-
+Fase de testes de novos comandos, agora iniciaremos a criação de um arquivo chamado "branch\_merge\_log.md", esse arquivo será utilizado para detalhar nossos estudos sobre os comandos branch, merge e log.
 
