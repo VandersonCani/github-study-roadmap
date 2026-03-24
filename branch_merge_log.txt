@@ -1,0 +1,7 @@
+Foi criada uma nova branch chamada "feature-estudo-branch" utilizando o comando:
+
+git checkout -b feature-estudo-branch
+
+Esse comando cria uma nova branch e automaticamente posiciona o ponteiro HEAD nessa nova branch.
+
+Isso significa que todas as alterações a partir desse momento não irão afetar a branch principal (main).teste de branch
