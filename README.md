@@ -242,3 +242,87 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Como podemos ver após o commit sobre a adição do texto\_de\_teste.txt, apenas o arquivo modificado se mantém na lista do git status com pendencia de commit, agora como ele é o ultimo arquivo a ser modificado, vou utilizar o comando "git add README.md",e depois vou comentar utilizando (git commit -m "Terminado atividade sobre utilização dos comandos git status, log, add"), após a utilização desses dois comandos vou adicionar aqui em baixo o resultado dos comandos git status e git log, para analisarmos o comportamento do git após todos arquivos e comentários estarem devidamente atualizados. 
 
+
+
+====================================================================================================================================================================
+
+
+
+XXXXXXXXXXXXXXXX \~/Desktop/Faculdade/github-study-roadmap (main)
+
+$ git status
+
+On branch main
+
+Your branch is ahead of 'origin/main' by 2 commits.
+
+&#x20; (use "git push" to publish your local commits)
+
+
+
+nothing to commit, working tree clean
+
+
+
+XXXXXXXXXXXXXXXX \~/Desktop/Faculdade/github-study-roadmap (main)
+
+$ git log
+
+commit e1f91cbc3179a5a45ff69ea906c1e83864cab702 (HEAD -> main)
+
+Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+
+Date:   Tue Mar 24 10:16:31 2026 -0300
+
+
+
+&#x20;   Terminado atividade sobre utilização dos comandos git status, log, add
+
+
+
+commit 4fd0811fd11066f7e4a9f83ce1db0624873656a2
+
+Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+
+Date:   Tue Mar 24 10:05:56 2026 -0300
+
+
+
+&#x20;   arquivo adicionado chamado texto de teste, nele contém mais informações sobre sua utilidade e funcionalidade
+
+
+
+commit 10a7079fcbbd99d3c1469f2d91837621409d64d3 (origin/main)
+
+Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+
+Date:   Tue Mar 24 09:08:37 2026 -0300
+
+
+
+&#x20;   Realizado edição do arquivo Readme
+
+
+
+commit 4fd986a695ccd1415b33c6c8caa28cb7aebee9ed
+
+Author: Vanderson Cani <vanderson.alex.cani@gmail.com>
+
+Date:   Tue Mar 24 09:01:43 2026 -0300
+
+
+
+====================================================================================================================================================================
+
+
+
+O retorno do comando git status nos mostra que nossa branch está atualizada, sem nenhuma modificação para ser adicionada ou comentada, e o nosso log de adições continua crescendo, o que mostra que nosso processo de desenvolvimento está sendo bem estruturado. Nessa etapa da atividade presenciei uma necessidade bastante comum, como nosso log está agora ficando muito extenso, o nosso terminal abriu um histórico visualizador que nos permite navegar através do histórico (quando me referi a abrir, não significa que abriu uma janela ou algo do tipo, me referi que a linha de comando no terminal está mostrando linhas interativas, onde apertando "enter" o terminal vai "abrindo" e mostrando os commits mais antigos em novas linhas no terminal, esse tipo de interação em terminais é comum em algumas situações como em ambientes Linux por exemplo, Curiosidade: você não consegue executar outro comando git enquanto não sair dessa interação do comando "git log", a tecla que é necessário apertar para sair da interação desse comando é "q", assim o terminal volta a esperar novos comandos git.
+
+
+
+====================================================================================================================================================================
+
+
+
+
+
